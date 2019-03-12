@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SensorStorageSystemPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>ExtraFeatures.FifthReading</class>
+    <class>ExtraFeatures.Tests</class>
+    <class>ExtraFeatures.Users</class>
+    <class>ExtraFeatures.FirstReading</class>
+    <class>ExtraFeatures.ThirdReading</class>
+    <class>ExtraFeatures.SecondReading</class>
+    <class>ExtraFeatures.CalibrationReading</class>
+    <class>ExtraFeatures.FourthReading</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:C:\Users\Mehar Abdullah\Documents\NetBeansProjects\SensorStorageSystem\ssglite.db"/>
+      <property name="javax.persistence.jdbc.user" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
